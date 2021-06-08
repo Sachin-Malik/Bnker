@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <!-- Bootstrap ICONS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+  <!-- Bootstrap CSS -->
+  
+ </script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+  <!-- My CSS Sheets -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <title>Online Banking</title>
+</head>
+
+<body>
+  
+  <section id="backwave">
+  <section id="navbar-my">
+      <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div class="container-fluid">
+          <div class="row my-brand">
+            <a class="navbar-brand" style="color:#4534aa" href="#">Bnker</a>
+            <!-- <img class="navbar-brand" src="assets/banner.svg" style="width:100px;" alt=""> -->
+          </div>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" style="color:white" href="/"><button type="button" class="btn btn-outline-primary navbar-btn">HOME</button></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color:white" href="#services"><button type="button" class="btn btn-outline-primary navbar-btn">EXPLORE</button></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color:white" href="#" ><button type="button" class="btn btn-outline-primary navbar-btn">PRICING</button></a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+  </section>
+  <div class="container-fluid">
+    <section id="main">
+
+      <div class="row justify-content-between">
+
+        <div class=" col-lg-5 col-md-5 col-sm-10 my-auto">
+          <div class="row pt-5 mt-5">
+            <div class="col">
+              <h1 style="color:#4534aa;">Online Bank Transactions</h1>
+              <p class="text-justify"> Need to transfer money securily and fast. Welcome to <span class="mark"> Bnker</span>&nbsp Where Online Transaction <span class="mark"> Made Easy</span> .  </p>
+              <a href="/users"> <button type="button" class="btn btn-lg btn-outline-primary btn-explore mt-3">Explore</button></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-7 col-sm-12  my-auto">
+          <div class="row">
+            <div class="col pl-5">
+              <img src="image/hero-image.svg" alt="Interview Image" style="width:100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </div>
+</section>
+  
+  <section id="goal">
+    <div class="row justify-content-around mb-5">
+      <div class="col text-center">
+        <h1>Recent Transactions</h1>
+      </div>
+    </div>
+      <div class="row d-flex justify-content-center mt-100 mb-100" style="width: 100%;" >
+        <div class="col-12 col-md-10 col-lg-8" >
+            <div class="card shadow px-3 py-5 " style="background-color: #d6d1f5;">
+                <ul class="list-style-none">
+                  <li class="row  card-body justify-content-around text-center font-weight-bold"> 
+                    <div class="col ">
+                      From
+                    </div>
+                    <div class="col">
+                      To
+                    </div>
+                    <div class="col">
+                      Amount (Rs)
+                    </div>
+                    
+                </li>
+                <% transArray.forEach(function( transaction){ %>
+                  <li class="row  card-body justify-content-around text-center my-3 "> 
+                    <div class="col ">
+                      <%= transaction.from %>
+                    </div>
+                    <div class="col">
+                      <%= transaction.to %>
+                    </div>
+                    <div class="col">
+                      <%= transaction.amount %>
+                    </div>        
+                </li>       
+              <% }) %>
+                </ul>
+            </div>
+        </div>
+    </div>
+  
+  </section>
+  <div class="container">
+    <div class="row justify-content-center">
+    <div class="col-10">
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      <strong>Not Updated !! &nbsp</strong> Please refresh this page if you think table is not updated.
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  </div>
+</div>
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script>
+    window.history.pushState("", "", '/');
+    </script>
+  
+</body>
+
+</html>
